@@ -1,0 +1,8 @@
+{
+  "name": "moneymonitor",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "989b6f90"
+}
