@@ -5,6 +5,30 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
+  },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'transaction-add',
+    loadChildren: () => import('./transaction-add/transaction-add.module').then( m => m.TransactionAddPageModule)
+  },
+  {
+    path: 'family-make',
+    loadChildren: () => import('./family-make/family-make.module').then( m => m.FamilyMakePageModule)
   }
 ];
 @NgModule({
